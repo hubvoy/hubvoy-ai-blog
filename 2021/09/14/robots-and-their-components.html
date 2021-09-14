@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Introduction | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Introduction" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://hubvoy.github.io/hubvoy-ai-blog/2021/09/14/robots-and-their-components.html" />
+<meta property="og:url" content="https://hubvoy.github.io/hubvoy-ai-blog/2021/09/14/robots-and-their-components.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-09-14T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2021-09-14T00:00:00-05:00","url":"https://hubvoy.github.io/hubvoy-ai-blog/2021/09/14/robots-and-their-components.html","@type":"BlogPosting","headline":"Introduction","dateModified":"2021-09-14T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://hubvoy.github.io/hubvoy-ai-blog/2021/09/14/robots-and-their-components.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/hubvoy-ai-blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://hubvoy.github.io/hubvoy-ai-blog/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/hubvoy-ai-blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/hubvoy-ai-blog/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/hubvoy-ai-blog/about/">About Me</a><a class="page-link" href="/hubvoy-ai-blog/search/">Search</a><a class="page-link" href="/hubvoy-ai-blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Introduction</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-09-14T00:00:00-05:00" itemprop="datePublished">
+        Sep 14, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/hubvoy/hubvoy-ai-blog/tree/master/_notebooks/2021-09-14-robots-and-their-components.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/hubvoy-ai-blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/hubvoy/hubvoy-ai-blog/master?filepath=_notebooks%2F2021-09-14-robots-and-their-components.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/hubvoy-ai-blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/hubvoy/hubvoy-ai-blog/blob/master/_notebooks/2021-09-14-robots-and-their-components.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/hubvoy-ai-blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-09-14-robots-and-their-components.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This post will give you an introduction into the field of robotics. In the first part of the post, I'm going to explain what robots are, what is the field of robotics and some historical background. In the second part of, I'm going to talk about different components of robots, what they allow robots to do and their individual jobs.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="What-are-robots?">What are robots?<a class="anchor-link" href="#What-are-robots?"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The definition of a robot is as follows: an autonomous system that exists in the physical world, can sense its environment and take action in that environment to achieve some goal(s).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="What-is-robotics?">What is robotics?<a class="anchor-link" href="#What-is-robotics?"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Robotics is, put simply, the field of study that concerns itself with robots.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="A-brief-history-of-robotics">A brief history of robotics<a class="anchor-link" href="#A-brief-history-of-robotics"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There were three fields that had the greatest impact on robotics: control theory, cybernetics and artificial intelligence.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Control-theory">Control theory<a class="anchor-link" href="#Control-theory"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Control theory is the study of mathematical features that govern autonomous control systems. It is one of the foundations of mechanical engineering and dates back to ancient times.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Cybernetics">Cybernetics<a class="anchor-link" href="#Cybernetics"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Cybernetics does not exist under that name anymore, but in the past it combined control theory with biological systems. The aim was to find similarities between artificial and biological control systems and build machines that would show animal-like behavior. The machines could be called biomimetic, because of the type of behavior they were modeled after. The key aspect of cybernetics is in the coupling, combination and interaction between artificial and biological systems and their environment.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="The-first-robots-given-our-definition">The first robots given our definition<a class="anchor-link" href="#The-first-robots-given-our-definition"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>With the definition in mind, the first robots ever created were Tortoises - devices created by William Grey Walter in late 1940s that were supposed to look like tortoises and use reactive control.</p>
+<p>Grey Walter's Tortoises also provide one of the first examples of what we call now artificial life - a field related to robotics, but one that focuses on systems that exist in the computer, not the real world.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Reactive-control-in-cybernetic-machines">Reactive control in cybernetic machines<a class="anchor-link" href="#Reactive-control-in-cybernetic-machines"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Most of the machines were using reactive control - they operated in their environment by responding to specific signals from their environment.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Emergent-behavior">Emergent behavior<a class="anchor-link" href="#Emergent-behavior"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sometimes the behavior of these devices was unexpected, not explicitly programmed - they showed emergent behavior.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Braitenberg's-vehicles">Braitenberg's vehicles<a class="anchor-link" href="#Braitenberg's-vehicles"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Valentino Braitenberg was an Italian nerusocientist and cybernetist. In 1984, he released a book called "Vehicles, Experiments in Synthetic Psychology" in which he proposed designs for what he called "vehicles" - cybernetic devices that used reactive control. 
+These devices began with a single light sensor, a single motor and an analog electronic circuit to connect them. They grew in complexity, more sensors and motors, with more complex connections between them.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="An-example-of-a-Braitenberg's-vehicle">An example of a Braitenberg's vehicle<a class="anchor-link" href="#An-example-of-a-Braitenberg's-vehicle"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To provide an example, let's imagine a small vehicle with 2 wheels in the back and 1 in the front to steer.
+The vehicle has a single light sensor on its front. 
+When the vehicle's sensor detects a light source, there are 2 possible reactions:</p>
+<ul>
+<li>photophilic - the brighter the source, the stronger the motors will work </li>
+<li>photophobic - the brighter the source, the weaker the motors will work</li>
+</ul>
+<p>These 2 types are the result of what we call excitatory and inhibitory connections (for photophilic and photophobic respectively).
+The inspiration for them comes from biological neurons, which can show similar behavior.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/hubvoy-ai-blog/2021/09/14/robots-and-their-components.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/hubvoy-ai-blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/hubvoy-ai-blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/hubvoy-ai-blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/hubvoy-ai-blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/hubvoy-ai-blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
